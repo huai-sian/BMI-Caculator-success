@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <meta charset="UTF_8">
+        <title>BMI Caculator</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/bmi.css">
+        <link href="https://file.myfontastic.com/PZpUThhHQYVSBoA4HByHCM/icons.css" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <div class="header container-flex flex-row">
+                <div class="logoimg"><img src="https://upload.cc/i1/2019/05/13/jox5QR.png"></div>
+                <div><form action="" class="container-flex flex-col">
+                    <label class="cm-label">身高  cm</label>
+                    <input class="cm-input" type="number" placeholder="請輸入身高">
+                    <label class="kg-label">體重  kg</label>
+                    <input class="kg-input" type="number" placeholder="請輸入體重">
+                </form>
+            </div>
+                <button class="result">看結果</button>
+                <div class="showresult" style="display:none;">
+                    <button class="reset">
+                        <span class="bminum"></span>
+                        <span class="bmi_mark">BMI</span>
+                        </button>
+                    <span class="icon"><i data-icon="C"></i></span>
+                    <span class="result_pass" ></span>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div>
+                <h2>BMI紀錄</h2>
+                <h2 class="check_record">尚未有紀錄</h2>
+                <ul class="recordlist"></ul>
+
+            </div>
+            <div>
+                <button class="clearAll">清除全部紀錄</button> 
+            </div>
+        </main>
+        <footer>BMI Caculator</footer>
+        <script src="js/bmicaculator.js"></script>
+    </body>
+</html>
